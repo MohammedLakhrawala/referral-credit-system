@@ -4,6 +4,8 @@ const dotenv = require("dotenv");
 
 dotenv.config();
 
+const authRoutes = require("./routes/auth.routes");
+
 const app = express();
 
 // Middlewares
@@ -20,8 +22,7 @@ app.get("/api/health", (req, res) => {
   res.json({ status: "ok", message: "Backend is running" });
 });
 
-// TODO: attach routes later
-// const authRoutes = require("./routes/auth.routes");
-// app.use("/api/auth", authRoutes);
+// Routes
+app.use("/api/auth", authRoutes);
 
 module.exports = app;
