@@ -6,6 +6,7 @@ dotenv.config();
 
 const authRoutes = require("./routes/auth.routes");
 const purchaseRoutes = require("./routes/purchase.routes");
+const dashboardRoutes = require("./routes/dashboard.routes");
 
 const app = express();
 
@@ -26,5 +27,6 @@ app.get("/api/health", (req, res) => {
 // Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/purchases", purchaseRoutes);
+app.use("/api/dashboard", dashboardRoutes);
 
 module.exports = app;
