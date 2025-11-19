@@ -1,14 +1,15 @@
-export default function HomePage() {
+import Navbar from "@/components/Navbar";
+
+export default function Home() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-slate-950 text-slate-100">
-      <div className="p-6 rounded-xl border border-slate-800 bg-slate-900/60">
-        <h1 className="text-2xl font-semibold mb-2">
-          Referral &amp; Credit System
-        </h1>
-        <p className="text-sm text-slate-300">
-          Frontend is running. 
-        </p>
-      </div>
-    </main>
+    <>
+      <Navbar />
+      <main className="min-h-screen flex items-center justify-center bg-slate-100">
+        <div className="p-8 bg-white rounded shadow">
+          <h1 className="text-2xl font-semibold">Referral & Credit System</h1>
+          <p className="mt-2 text-slate-600">Register, share your referral code and earn credit when referred users make their first purchase.</p>
+        </div>
+      </main>
+    </>
   );
 }
