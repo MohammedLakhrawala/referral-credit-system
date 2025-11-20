@@ -13,7 +13,8 @@ const app = express();
 // Middlewares
 app.use(
   cors({
-    origin: "referral-credit-system-liard.vercel.app",
+    origin: "referral-credit-system-liard.vercel.app", 
+    "http://localhost:3000"
     credentials: true,
   })
 );
