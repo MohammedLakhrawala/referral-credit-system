@@ -14,7 +14,7 @@ const app = express();
 app.use(
   cors({
     origin: "referral-credit-system-liard.vercel.app", 
-    "http://localhost:3000"
+    "http://localhost:3000",
     credentials: true,
   })
 );
