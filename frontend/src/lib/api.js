@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = process.env.NEXT_PUBLIC_API_URL || "https://referral-credit-system-7xml.onrender.com";
+const baseURL = "https://referral-credit-system-7xml.onrender.com";
 
 const api = axios.create({
   baseURL,
