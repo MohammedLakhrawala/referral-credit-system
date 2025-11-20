@@ -20,13 +20,13 @@ app.use(
 app.use(express.json());
 
 // Healthcheck
-app.get("/api/health", (req, res) => {
+app.get("/health", (req, res) => {
   res.json({ status: "ok", message: "Backend is running" });
 });
 
 // Routes
-app.use("/api/auth", authRoutes);
-app.use("/api/purchases", purchaseRoutes);
-app.use("/api/dashboard", dashboardRoutes);
+app.use("/auth", authRoutes);
+app.use("/purchases", purchaseRoutes);
+app.use("/dashboard", dashboardRoutes);
 
 module.exports = app;
